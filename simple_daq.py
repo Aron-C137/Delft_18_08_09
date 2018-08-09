@@ -36,7 +36,7 @@ class Device:
         value = int(value / 3.3 * 4095)
         write_string = 'OUT:CH{}:{}'.format(channel, value)
         self.write(write_string)
-        sleep(1)
+#        sleep(1)
 
     def write(self, message):
         message += self.DEFAULTS['write_termination']
